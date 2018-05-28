@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
+    "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.4.0",
