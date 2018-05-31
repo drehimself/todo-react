@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { inject, observer } from 'mobx-react';
 
-const TodosRemaining = props => {
+const TodosRemaining = inject('TodoStore')(observer(props => {
   return (
     <div>
-      {props.remaining} items left
+      {props.TodoStore.remaining} items left
     </div>
   );
-};
+}));
 
 TodosRemaining.propTypes = {
-  remaining: PropTypes.number.isRequired,
+  TodoStore: PropTypes.object.isRequired,
 }
 
 export default TodosRemaining;
