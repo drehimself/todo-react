@@ -11,7 +11,7 @@ const TodosCheckAll = inject('TodoStore')(observer(props => {
   );
 }));
 
-TodosCheckAll.propTypes = {
+TodosCheckAll.wrappedComponent.propTypes = {
   TodoStore: PropTypes.object.isRequired,
 };
 

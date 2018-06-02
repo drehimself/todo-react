@@ -10,7 +10,7 @@ const TodosRemaining = inject('TodoStore')(observer(props => {
   );
 }));
 
-TodosRemaining.propTypes = {
+TodosRemaining.wrappedComponent.propTypes = {
   TodoStore: PropTypes.object.isRequired,
 }
 

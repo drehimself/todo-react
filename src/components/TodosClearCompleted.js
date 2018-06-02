@@ -11,7 +11,7 @@ const TodosClearCompleted = inject('TodoStore')(observer(props => {
   );
 }));
 
-TodosClearCompleted.propTypes = {
+TodosClearCompleted.wrappedComponent.propTypes = {
   TodoStore: PropTypes.object.isRequired,
 };
 

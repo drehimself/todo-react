@@ -45,7 +45,7 @@ const TodoItem = inject('TodoStore')(observer(props => {
   );
 }));
 
-TodoItem.propTypes = {
+TodoItem.wrappedComponent.propTypes = {
   todo: PropTypes.object.isRequired,
   TodoStore: PropTypes.object.isRequired,
 };

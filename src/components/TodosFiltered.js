@@ -32,7 +32,7 @@ const TodosFiltered = inject('TodoStore')(observer(props => {
   );
 }));
 
-TodosFiltered.propTypes = {
+TodosFiltered.wrappedComponent.propTypes = {
   TodoStore: PropTypes.object.isRequired,
 };
 
